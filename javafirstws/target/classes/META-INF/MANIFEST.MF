@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: ajaydinakar
+Build-Jdk: 21.0.3
+Implementation-Title: javafirstws
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.ajay.ws.soap
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/javafirstws
+Created-By: Maven Integration for Eclipse
+
