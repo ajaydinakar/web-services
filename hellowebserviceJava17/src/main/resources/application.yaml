@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: hellowebservicejava17
+
+server:
+  servlet:
+    context-path: /hellows
+cxf:
+  path: /
+
+

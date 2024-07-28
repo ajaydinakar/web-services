@@ -3,7 +3,6 @@ plugins {
 	id 'org.springframework.boot' version '3.2.7'
 	id 'io.spring.dependency-management' version '1.1.5'
 }
-
 group = 'com.ajay.ws.soap'
 version = '0.0.1-SNAPSHOT'
 
@@ -19,6 +18,9 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation group: 'org.apache.cxf', name: 'cxf-spring-boot-starter-jaxws', version: '4.0.2'
+    //from java 9 we need to define the below as javax packages that have @Webservice @WebMethod removed in jakartaEE
+	implementation group: 'jakarta.xml.ws', name: 'jakarta.xml.ws-api', version: '4.0.2'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
