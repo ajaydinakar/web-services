@@ -9,9 +9,10 @@ import org.apache.cxf.feature.Features;
 
 import com.ajay.ws.soap.dto.PaymentProcessorRequest;
 import com.ajay.ws.soap.dto.PaymentProcessorResponse;
+import com.ajay.ws.soap.exceptions.ServiceException;
 @WebService(name="PaymentProcessor")
 @Features(features="org.apache.cxf.feature.LoggingFeature")
 public interface PaymentProcessor {
 @WebMethod
-	public @WebResult(name="response") PaymentProcessorResponse processPayment(@WebParam(name="paymentProcessorRequest")  PaymentProcessorRequest paymentProcessorRequest);
+	public @WebResult(name="response") PaymentProcessorResponse processPayment(@WebParam(name="paymentProcessorRequest")  PaymentProcessorRequest paymentProcessorRequest)throws ServiceException;
 }
